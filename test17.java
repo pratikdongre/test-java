@@ -26,12 +26,32 @@ public class test17 {
 		// int 이하의 자료형은 무조건-> int 형으로 변환
 		// 자료형의 우선 순위는 long>int
 		 
-		byte a =2;
-		long b =3;
+		// byte a =2;
+		// long b =3;
 		
-		int c= (int)(a + b); //정수형에서 이항 연산을 처리하는 규칙 (변수인 경우)
+		// int c= (int)(a + b); //정수형에서 이항 연산을 처리하는 규칙 (변수인 경우)
 		
-		System.out.println(c);
+		// System.out.println(c);
+        //변수, 실수
+		// 자료형의 우선 순위 double>float
+//		
+//		float a = 3.0f;
+//		float b = 4.0;
+//		float c= a+b;
+//		
+//		System.out.println(c);
+//		
+		
+		// 변수 , 정수<-> 실수
+		// 실수 > 정수
+//		
+//		float a =3.0f;
+//		int b = 4;
+//		
+//		double c = a+b;
+//		System.out.println(c);
+	
+	
 		
 	
 	
