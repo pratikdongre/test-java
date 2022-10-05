@@ -19,7 +19,7 @@ public class test18 {
 // 		112.3
 		
 //		
-
+// cf, //System.out.println(2+3*4.0+"23"); //결과값 14.023
     }
     
 }
