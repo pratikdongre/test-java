@@ -6,55 +6,45 @@ public class test20 {
   
     public static void main(String[] args) {
         // 구구단 값 출력 하기
-    while(true){   
+       while(true){
+        //메뉴얼 출력
+        System.out.println("----------");
+        System.out.println("1.구구단 출력");
+        System.out.println("2. 프로그램 출력");
+        System.out.println("----------");
 
-        // 메뉴 우선 출력
-        System.out.println("------------");
-        System.out.println("1. 구구단 출력");
-        System.out.println("2. 프로그램 종료");
-        System.out.println("------------");    
-        
-        //<키보드로 부터 정수값 입력>
-
-        // 1을 입력 했을때 -> 구구단 출력
-        Scanner scan =new Scanner(System.in);
+        //입력값 받기
+        Scanner scan= new Scanner(System.in);
         int inputValue = scan.nextInt();
-    
-    if(inputValue == 1){
-            System.out.println("출력할 구구단의 값을 입력하세요.구구단은 2~9사이의 입력하시오");
-
-        // 2와9 사이를 입력 했을때 그 구구단 이 출력 
-        int foo =scan.nextInt();
+        //1번 입력시
+        if(inputValue==1){
+            System.out.println("출력할 구구단의 단을 입력하세요. 구구단의 단은2~9사이");
+        int foo = scan.nextInt();
         if(foo>=2 && foo<=9){
-        
-            for(int firstValue = 1; firstValue<=9;firstValue++){
-                System.out.println(foo + "x" + firstValue + "=" + (foo*firstValue)); // 구구단의 식이 나오게끔 하는것
-          }   
-          }    
-          else{
-              System.out.println("2~9사이에 정수를 입력해주세요.");
-          }   
-           
-          }
-        else if(inputValue == 2){
-           
-            System.out.println("이용해주셔서 감사합니다");
-            break;
-        }
+            for(int firstValue = 1 ; firstValue<=9; firstValue++){
+                System.out.println(foo + "x" + firstValue + "="+ (foo*firstValue));
+        //1번 을 입력시 구구단의 식이 나온다 ex) 3을 입력시 3의 구구단 이 나옴          
 
-           // 선택지에서 1과2 이외 정수를 입력했을때
-       else{
-         System.out.println("잘못입력하셨습니다. 다시 입력하세요");
-        }
-   
-        
+            }
+            
+        // 그런데 2와9사이 정수를 입력 하지 않을 시에는 다음 과 같은 값이 출력됨     
+         }else{
+            System.out.println("2~9사이 정수를 입력해주세요"); // 2~9사이 정수를 입력해주세요
+         }
+
+    }    // 2번버튼을 누를시에는 프로그램이 종료가 된다
+    else if(inputValue==2){
+        System.out.println("이용해주셔서 감사합니다");
+        break;
+
+        // 메뉴얼 창에서 1과2가 아닌 수를 입력하면 다음과 같은 화면이 출력된다
+    }else{
+        System.out.println("잘못 입력하셨습니다 다시 입력하세요.");
     }
- 
-
-}
-
-
-}
+    
+    }
+ }
+ }
      
 
 
